@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Update Member Details</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/updatemember.css">
+</head>
+
+<body>
+	<div class="main" id="main">
+		<div class="container">
+			<h1 id="updateText">
+				Update Member details
+			</h1>
+			<hr>
+		</div>
+		<form action="/updatemember" method="PUT" id="updatemember">
+			<div class="content">
+				<div id="success" class="alert alert-success alert-dismissible fade" role="alert" id="message">
+					<strong>Success!</strong> Member details updated successfully.
+					<button type="button" class="btn-close" id="dis" data-bs-dismiss="alert"
+						aria-label="Close"></button>
+				</div>
+				<div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+					<strong>Failure!</strong> Unable to update member. Check and fill again properly.
+					<button type="button" id="fdis" class="btn-close" data-bs-dismiss="alert"
+						aria-label="Close"></button>
+				</div>
+				<div class="input-group my-3">
+					<label id="labelemail"><b>Enter Member Email</b></label>
+					<input type="email" class="form-control mx-3" name="email" id="memail">
+					<small id="emailvalid" class="form-text text-muted invalid-feedback">
+						<p>Enter a valid email</p>
+					</small>
+				</div>
+
+				<span id="spantext">What do you want to update?</span>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="namechk" onclick="updateOnChk()">
+					<label id="lname" class="form-check-label" for="flexCheckDefault">
+						Name
+					</label>
+					<div id="updname" class="mb-3">
+						<label for="updmname" class="input-labels" id="lname"><b> Update Member Name</b></label>
+						<input id="updmname" type="text" class="form-control" aria-label="Sizing example input"
+							aria-describedby="inputGroup-sizing-default" name="name">
+						<small id="namevalid" class="form-text text-muted invalid-feedback">
+							<p>Enter a valid name</p>
+						</small>
+					</div>
+				</div>
+				<div class="form-check" id="age">
+					<input class="form-check-input" type="checkbox" id="agechk" onclick="updateOnChk()">
+					<label id="lage" class="form-check-label" for="flexCheckDefault">
+						Age
+					</label>
+					<div id="updage" class="mb-3">
+						<label for="updmage" class="input-labels" id="lname"><b> Update Member Age</b></label>
+						<input id="updmage" type="text" class="form-control" aria-label="Sizing example input"
+							aria-describedby="inputGroup-sizing-default" name="age">
+						<small id="agevalid" class="form-text text-muted invalid-feedback">
+							<p>Enter a valid age</p>
+						</small>
+					</div>
+				</div>
+				<div class="form-check" id="mno">
+					<input class="form-check-input" type="checkbox" id="mnochk" onclick="updateOnChk()">
+					<label id="lmno" class="form-check-label" for="flexCheckDefault">
+						Mobile No.
+					</label>
+					<div id="updmno" class="mb-3">
+						<label for="updmmno" class="input-labels" id="lname"><b>Update Member Phone No.</b></label>
+						<input id="updmmno" type="text" class="form-control" aria-label="Sizing example input"
+							aria-describedby="inputGroup-sizing-default" name="phone">
+						<small id="phonevalid" class="form-text text-muted invalid-feedback">
+							<p>Enter a valid 10 digit phone number</p>
+						</small>
+					</div>
+				</div>
+				<div class="form-check" id="mcemail">
+					<input class="form-check-input" type="checkbox" id="emailchk" onclick="updateOnChk()">
+					<label id="lmemail" class="form-check-label" for="flexCheckDefault">
+						Email
+					</label>
+					<div id="updemail" class="mb-3">
+						<label id="labelemail" class="input-labels"><b>Update Member Email</b></label>
+						<input type="email" class="form-control mx-3" name="email" id="updmemail" name="email">
+						<small id="memailvalid" class="form-text text-muted invalid-feedback">
+							<p>Enter a valid email</p>
+						</small>
+					</div>
+				</div>
+				<div class="form-check" id="rno">
+					<input class="form-check-input" type="checkbox" id="rnochk" onclick="updateOnChk()">
+					<label id="lrno" class="form-check-label" for="flexCheckDefault">
+						Room No.
+					</label>
+					<div id="updrno" class="mb-3">
+						<label for="updmrno" class="input-labels" id="lname"><b>Update Member Room No.</b></label>
+						<input id="updmrno" type="text" class="form-control" aria-label="Sizing example input"
+							aria-describedby="inputGroup-sizing-default" name="room">
+						<small id="roomvalid" class="form-text text-muted invalid-feedback">
+							<p>Enter a valid Room no.</p>
+						</small>
+					</div>
+				</div>
+				<div class="form-check" id="wing">
+					<input class="form-check-input" type="checkbox" id="wingchk" onclick="updateOnChk()">
+					<label id="lwing" class="form-check-label" for="flexCheckDefault">
+						Wing
+					</label>
+					<div id="updwing" class="mb-3">
+						<label for="updmwing" class="input-labels" id="lname"><b>Update Member Wing</b></label>
+						<input id="updmwing" type="text" class="form-control" aria-label="Sizing example input"
+							aria-describedby="inputGroup-sizing-default" name="wing">
+						<small id="wingvalid" class="form-text text-muted invalid-feedback">
+							<p>Enter a valid Wing(A-F)</p>
+						</small>
+					</div>
+				</div>
+				<div class="updatebtn">
+					<button type="submit" class="btns" id="update">Update</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+<script src="./scripts/updatemember.js"></script>
+
+</html>

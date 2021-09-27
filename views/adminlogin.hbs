@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Page</title>
+    <link rel="stylesheet" href="./css/adminlogin.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body> 
+    <h1>
+    Admin Login Page
+  	</h1>
+  	<div class="imgcontainer">
+    	<img src="./images/society.png" class="avatar" alt="society_img">
+    </div>
+  	<form action = "/adminlogin" method="post" id="adminlogin">
+		  <div class="container">
+				<div id="loginfail" class="alert alert-danger alert-dismissible fade" role="alert">
+					<strong>Failure!</strong> Unable to Login. Try again!.
+					<button type="button" id = "fdis" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				<label for="adminemail"><b>Email Id</b></label>
+				<input id = "email" type="text" placeholder="Enter Email" name="email" required> <br>
+				
+				<small id="emailvalid" class="form-text text-muted invalid-feedback">
+					<p>*Enter a valid email-id in the form of youremail@example.com</p>
+				</small>
+
+				<label for="psw"><b>Password</b></label>
+				<input id = "pass" type="password" placeholder="Enter Password" name="psw" required> <br>
+				<small id="passvalid" class="form-text text-muted invalid-feedback">
+					<p>*Your password is incorrect</p>
+				</small>
+				
+				<button type="submit" id="btn">Login</button> <br>
+    		</div>
+	  </form>
+</body>
+<script src="./scripts/adminlogin.js"></script>
+</html>

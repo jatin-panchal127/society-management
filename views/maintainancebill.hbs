@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintainance Bill</title>
+ 	<link rel="stylesheet" href="./css/maintainancebill.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+	<body>
+		<div class="main">
+			<div class="container">
+				<h1>
+					Maintainance Bill
+				</h1> <hr>
+			</div>
+			<div class="content">
+				<div class="mbillinputs" id="consumerid">
+					<label for="uid" id="lid"><b>Consumer Id</b></label>
+					<input type="text" placeholder="Enter Consumer Id" id="cid" name="id" required>
+				</div>
+				<div class="mbillinputs" id="consumername">
+					<label for="uname" id="lname"><b>Consumer Name</b></label>
+					<input type="text" placeholder="Enter Consumer Name" id="cname" name="name" required> 
+				</div>
+				<button type="submit" id="btn">Calculate Bill</button> 
+				<label for="amount" id="lamnt"><b>Total Amount</b></label>
+				<button type="submit" id="btn"> Pay</button> 
+				<button type="button" id="btn" class="Printbtn">Print</button>
+			</div>
+		</div>  
+	</body>
+</html>

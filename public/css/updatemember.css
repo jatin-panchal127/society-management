@@ -1,0 +1,111 @@
+.content {	
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #fff;
+	padding-bottom: 40px;
+}
+
+.main{
+	background-color: #fff;
+	height: 100vh;
+}
+
+.input-group{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 30%;	
+	margin-bottom: 20px;
+}
+
+.input-labels{
+	font-size: 20px;
+	width: 270px;
+	margin: 16px 10px 20px 10px;
+}
+
+#spantext{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4b61e0;
+}
+
+#updname , #updage , #updrno , #updwing , #updmno , #updemail{
+	position: relative;
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#emailchk{
+	margin-right: 5px;
+}
+
+#updateText{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btns{
+    height: 40px;
+    width: 150px;
+    margin: 20px 0;
+	font-size: 20px;
+	background-color: #fff;
+	border: 2px solid #ff5100;
+	color: #ff5100;
+	border-radius: 6px;
+}
+
+.btns:hover{
+	color: #fff;
+	background-color: #ff5100;
+}
+
+#age{
+	margin-right: 15px;
+}
+
+#rno{
+	margin-left: 30px;
+}
+
+#wing{
+	margin-right: 4px;
+}
+
+#mno{
+	margin-left: 38px;
+}
+
+.form-check{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px 0;
+}
+
+.form-check-label{
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+#namevalid , #phonevalid , #agevalid , #roomvalid , #wingvalid , #memailvalid {
+    /* padding: 0 0 20px 5px; */
+    margin-top: -30px;
+}
+
+#emailvalid{
+	margin-top: -30px;
+	padding: 0 0 20px 150px;
+}
+
+p{
+    color: #ff5100;
+	margin:  35px 0 0 25px;
+}

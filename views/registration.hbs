@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Here!</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/registration.css">
+</head>
+	<body>
+		<div class="main" id="main">
+			<div class="container" id="container">
+				<h1>Member Registration</h1><hr>
+			</div>
+			<div class="content my-3 py-3" id="content">
+				<form action="/registration" method="POST" id="registerform">
+					<div class="input-group my-6">
+						<label id="labelname"><b>Enter Name</b></label>
+						<input type="text" class="form-control mx-3" name = "name" placeholder="Enter your name" aria-label="Username">
+					</div>
+					<div class="input-group my-3">
+						<label id="labelage"><b>Enter Age</b></label>
+						<input type="text" id="memberage" name = "age" class="form-control mx-3" placeholder="Enter your age" aria-label="Userage">
+					</div>
+					<div class="input-group my-3">
+						<label id="labelgender"><b>Select Gender</b></label>
+						<div class="form-check mx-3 px-3">
+							<input class="form-check-input" type="radio" name="gender" id="male" value="male">
+							<label class="form-check-label" for="male">
+							  Male
+							</label>
+						</div>
+						<div class="form-check  mx-3 px-3">
+							<input class="form-check-input" type="radio" name="gender" id="female" value="female">
+							<label class="form-check-label" for="female">
+							  Female
+							</label>
+						</div>
+						<div class="form-check mx-3 px-3">
+							<input class="form-check-input" type="radio" name="gender" id="other" value="other">
+							<label class="form-check-label" for="other">
+							  Others
+							</label>
+						</div>
+					</div>
+					<div class="input-group my-3">
+						<label id="labelphone"><b>Enter Phone</b></label>
+						<input type="text" class="form-control mx-3" name = "phone" placeholder="Enter your phone no" aria-label="Userphone">
+					</div>
+					<div class="input-group my-3">
+						<label id="labelemail"><b>Enter Email</b></label>
+						<input type="email" class="form-control mx-3" name = "email" id="memberemail" placeholder="membername@gmail.com">
+					</div>
+					<div class="input-group my-3">
+						<label id="labelroom"><b>Enter Room</b></label>
+						<input type="text" class="form-control mx-3" name = "room" placeholder="Enter your room no" aria-label="Userroom">
+					</div>
+					<div class="input-group my-3">
+						<label id="labelwing"><b>Enter Wing</b></label>
+						<input type="text" class="form-control mx-3" name = "wing" placeholder="Enter your wing" aria-label="Userwing">
+					</div>
+					<div class="input-group my-3">
+						<label id="labelpass"><b>Enter Password</b></label>
+						<input type="text" class="form-control mx-3" name = "password" placeholder="Enter your password" aria-label="Userpass">
+					</div>
+					<div class="input-group my-3">
+						<label id="labelconfpass"><b>Confirm Password</b></label>
+						<input type="text" class="form-control mx-3" name = "confirmpassword" placeholder="Confirm your password" aria-label="Userconfpass">
+					</div>
+					<div class="buttons">
+						<input  id = "registerbtn" class="btn btn-primary" type="submit" value="Register">
+					</div>
+				</form>
+			</div>
+	</body> 
+</html>

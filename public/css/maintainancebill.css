@@ -1,0 +1,60 @@
+.main{
+	background-color: #eefdf7;
+	height: 100vh;
+}
+
+.content {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+  
+h1{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ 
+#cid{
+	height: 50px;
+	width: 250px;
+	margin: 20px  0 20px 60px;
+}
+
+#cname{
+	height: 50px;
+	width: 250px;
+	margin: 20px 0 20px 20px;
+}
+
+#btn{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color:  #36f395;
+    border-radius: 45px;
+	border: none;
+	height: 50px;
+	width: 150px;
+	margin: 20px 0;
+}
+
+#btn:hover{
+	color: white;
+	background-color: rgb(5, 117, 48);
+}
+
+#lid{
+    font-size: 22px;
+}
+
+#lname{
+    font-size: 22px;
+}
+
+#lamnt{
+    font-size: 22px;
+	margin: 10px 0;
+}

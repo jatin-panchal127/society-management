@@ -1,0 +1,78 @@
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+.input-group{
+	padding: 10px 0;
+	width: 80%;
+}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#labelname , #labelphone {
+	margin: 5px;
+}
+
+#labelemail{
+	margin: 5px 12px 5px 5px;
+}
+
+#labelgender{
+	margin: 0 5px 0 0;
+}
+
+#labelage{
+	margin: 5px 20px 5px 5px;
+}
+
+#labelroom{
+	margin: 5px 10px 5px 5px;
+}
+
+#labelwing{
+	margin: 5px 15px 5px 5px;
+}
+
+#labelpass{
+	margin: 5px 0 5px -10px;
+}
+
+#labelconfpass{
+	margin: 5px 0 5px -30px;
+}
+
+
+#addbtn{
+	background-color: white;
+	border: 2px solid #184d4a;
+	color: #184d4a;
+	height: 40px;
+	width: 150px;
+	border-radius: 6px;
+}
+
+#addbtn:hover{
+	background-color: #184d4a;
+	border: none;
+	color: white
+}
+
+
+p{
+    color: #184d4a;
+	margin-left: 120px;
+}

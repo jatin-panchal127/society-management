@@ -1,0 +1,93 @@
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.input-group{
+	padding: 10px 0;
+}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#labelname , #labelphone {
+	margin: 5px;
+}
+
+#labelemail{
+	margin: 5px 12px 5px 5px;
+}
+
+#labelgender{
+	margin: 0 5px 0 0;
+}
+
+#labelage{
+	margin: 5px 20px 5px 5px;
+}
+
+#labelroom{
+	margin: 5px 10px 5px 5px;
+}
+
+#labelwing{
+	margin: 5px 15px 5px 5px;
+}
+
+#labelpass{
+	margin: 5px 0 5px -10px;
+}
+
+#labelconfpass{
+	margin: 5px 0 5px -30px;
+}
+
+
+#registerbtn{
+	background-color: white;
+	border: 2px solid #ff7552;
+	color:#ff7552;
+	height: 40px;
+	width: 150px;
+}
+
+#registerbtn:hover{
+	background-color: #b12300;
+	border: none;
+	color: white;
+}
+/* 
+#loginbtn{
+	background-color: white;
+	border: 2px solid #2fa700;
+	color: #2fa700;
+	height: 40px;
+	width: 150px;
+}
+
+#loginbtn:hover{
+	background-color: #164e00;
+	border: none;
+	color: white;
+	width: 200px;
+}
+
+#loginbtn span:hover{
+	display: none;
+}
+
+#loginbtn:hover:before {
+	content:"Already registered?";
+	font-size: 12px;
+} */

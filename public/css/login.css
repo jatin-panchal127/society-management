@@ -1,0 +1,134 @@
+#email{
+    padding: 10px 30px;
+    margin: 10px 10px 10px 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#pass{
+    padding: 10px 30px;
+    margin: 10px 10px 10px 29px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#code{
+    padding: 10px 30px;
+    margin: 10px 10px ;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#btn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+  
+#btn:hover {
+    opacity: 0.8;
+}
+  
+.cancelbtn {
+    padding: 10px 20px;
+    background-color: #f44336;
+	border: none;
+	color: white;
+}
+
+.cancelbtn:hover{
+    opacity: 0.8;
+}
+  
+.imgcontainer {
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    margin: 24px  12px ;
+}
+  
+img.avatar {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+  
+.container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 16px;
+}
+
+.content form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	align-content: center;
+}
+
+
+.forgotpsw {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.forgotpsw:hover{
+    text-decoration: underline;
+    color: #04AA6D;
+}
+
+#logintext{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#emailvalid , #passvalid , #codevalid{
+    padding: 0 0 0 120px;
+}
+
+p{
+    color: red;
+}
+
+#lemail{
+	margin-right: 15px;
+}
+
+#lpass{
+	margin-right: 10px;
+}
+  
+#lcode{
+	margin-right: 5px;
+}
+
+#lremember{
+	margin: 10px 0;
+}
+
+#cancel{
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+
+    .cancelbtn {
+      width: 50%;
+    }
+}

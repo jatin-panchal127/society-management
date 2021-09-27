@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="./css/login.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container" id="container">
+		<h1 id="logintext">
+			Login Page
+		</h1>
+		<div class="imgcontainer">
+			<img src="./images/society.png" class="avatar">
+		</div>
+		<div class="content" id="content">
+			<div id="loginfail" class="alert alert-danger alert-dismissible fade" role="alert">
+				<strong>Failure!</strong> Unable to Login. Try again!.
+				<button type="button" id = "fdis" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			<form action="/login" method="post">
+				<div id="emailinput"  class="userinputs">
+					<label for="uname" id="lemail"><b>Email Id</b></label>
+					<input type="text" placeholder="Enter Email" id = "email" name="email" required> <br>
+					<small id="emailvalid" class="form-text text-muted invalid-feedback inputerror">
+						<p>*Enter a valid email-id</p>
+					</small>
+				</div>
+				<div id="passinput" class="userinputs">
+					<label for="psw" id="lpass"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" id = "pass" name="psw" required> <br>
+					<small id="passvalid" class="form-text text-muted invalid-feedback inputerror">
+						<p>*Your password is incorrect</p>
+					</small>
+				</div>
+				<div id="codeinp" class="userinputs">
+					<label for="code" id="lcode"><b>Society code</b></label>
+					<input type="text" placeholder="Enter Society code" id="code" name="code" required> <br>
+					<small id="codevalid" class="form-text text-muted invalid-feedback inputerror">
+						<p>*Your code is incorrect</p>
+					</small>
+				</div>
+				<button id="btn" type="submit">Login</button>
+				<label id="lremember">
+					<input type="checkbox" id="rememberme" name="remember">  Remember me 
+				</label>
+				<button type="button"  id = "cancel" class="cancelbtn">Cancel</button> 
+				<a href="#" class="forgotpsw">Forgot password </a>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="./scripts/userlogin.js"></script>
+</html>
+
+{{!-- <button  id = "loginbtn" class="btn btn-primary mx-3" type="submit"><span> Login </span><a href="/login"></a></button> --}}
